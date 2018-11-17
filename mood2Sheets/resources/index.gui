@@ -4,6 +4,11 @@
     <set href="#text" attributeName="fill" to="fb-peach" />
     <set href="#image" attributeName="href" to="steps.png" />    
   </use>
+  <use id="btn_bad" href="#square-button-icon" y="$" fill="fb-red">
+    <set href="#text" attributeName="text-buffer" to="Schlecht" />
+    <set href="#text" attributeName="fill" to="fb-peach" />
+    <set href="#image" attributeName="href" to="steps.png" />    
+  </use>
 </svg>
 
 

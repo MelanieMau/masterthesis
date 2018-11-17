@@ -1,0 +1,21 @@
+{
+  "fitbit": {
+    "appUUID": "ff2754c5-24ed-439d-a121-5f55ccde1580",
+    "appType": "app",
+    "appDisplayName": "Motivation4everyone",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#e91e63",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Motivation4everyone"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}

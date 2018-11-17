@@ -1,0 +1,21 @@
+{
+  "fitbit": {
+    "appUUID": "aad37243-4c42-49d9-8af7-0ed014c89db6",
+    "appType": "app",
+    "appDisplayName": "WhatsUrMood",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#f44336",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "WhatsUrMood"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}

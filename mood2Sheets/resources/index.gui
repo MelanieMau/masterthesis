@@ -1,0 +1,9 @@
+<svg>
+  <use id="btn_happy" href="#square-button-icon" y="5" fill="fb-red">
+    <set href="#text" attributeName="text-buffer" to="Glücklich" />
+    <set href="#text" attributeName="fill" to="fb-peach" />
+    <set href="#image" attributeName="href" to="steps.png" />    
+  </use>
+</svg>
+
+

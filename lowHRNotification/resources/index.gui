@@ -1,0 +1,14 @@
+<svg>
+  <text id="hrm" x="0" y="72%" class="large-value">42</text>
+  <text id="updated" x="0" y="92%" class="updated">now!</text>
+  <textarea id="warning" x="5" y="5" width="100%-10"
+    font-family="System-Regular" fill="white" font-size="24">Lorem ipsum
+    dolor sit amet, consectetur adipiscing elit. Hoc Hieronymus summum bonum esse
+    dixit. Cui Tubuli nomen odio non est? Teneo, inquit, finem illi videri nihil
+    dolere. Nec vero sum nescius esse utilitatem in historia, non modo voluptatem.
+    Idem iste, inquam.</textarea>
+    <text id="gps" y="$"> Lorem ipsum
+    dolor sit amet, consectetur adipiscing elit. Hoc Hieronymus summum bonum esse
+    dixit. Cui Tubuli nomen odio non est?</text>
+</svg>
+

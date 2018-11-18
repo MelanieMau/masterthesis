@@ -12,6 +12,7 @@ let wrnLabel = document.getElementById("warning");
 
 
 const eventName = "lowHRNotification";
+value1 = hrm.heartRate;
 
 // Keep a timestamp of the last reading received. Start when the app is started.
 let lastValueTimestamp = Date.now();
@@ -55,13 +56,19 @@ function updateDisplay() {
   hrLabel.text = hrm.heartRate;
   lastValueTimestamp = Date.now();
     
+    
+   setInterval(
+  () => {
+  
       if (hrm.heartRate <= 30){
         wrnLabel.text = ("Dein Puls ist sehr niedrig. Eine Email diesbezüglich wird automatisch versendet.");
-        sendEventIfReady(eventName, hrm.heartRate)
+        sendEventIfReady(eventName, value1);
       } else {
         wrnLabel.text = (" ");
       }
-  
+  },
+  4 * 1000
+);
 
   }
 
@@ -72,9 +79,9 @@ function updateDisplay() {
 // And update the display every second
 setInterval(updateDisplay, 1000);
 
-function sendEventIfReady(eventName, val) {
+function sendEventIfReady(eventName, value1) {
   if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
-    messaging.peerSocket.send({eventName: eventName, result: val});
+    messaging.peerSocket.send({eventName: eventName, value1: value1});
   }
 }
 

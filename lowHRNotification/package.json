@@ -1,17 +1,17 @@
 {
   "fitbit": {
-    "appUUID": "26b392a6-4613-457d-a84d-8231d6e9a3d8",
+    "appUUID": "20a11807-3035-46c1-860c-32c67b41dbbd",
     "appType": "app",
-    "appDisplayName": "HR-Meter",
+    "appDisplayName": "test_iftt_buttons",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#e91e63",
+    "wipeColor": "#4caf50",
     "requestedPermissions": [
-      "access_heart_rate",
       "access_activity",
-      "access_location",
       "access_user_profile",
-      "run_background",
-      "access_internet"
+      "access_heart_rate",
+      "access_location",
+      "access_internet",
+      "run_background"
     ],
     "buildTargets": [
       "higgs",
@@ -19,11 +19,11 @@
     ],
     "i18n": {
       "en": {
-        "name": "HR-Meter"
+        "name": "test_iftt_buttons"
       }
     }
   },
   "devDependencies": {
-    "@fitbit/sdk": "~1.0.0"
+    "@fitbit/sdk": "~2.0.0"
   }
 }

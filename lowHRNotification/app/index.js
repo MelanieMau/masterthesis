@@ -1,7 +1,8 @@
-let document = require("document");
+import document from "document";
 import { me } from "appbit";
 import { HeartRateSensor } from "heart-rate";
 import * as messaging from "messaging";
+import { geolocation } from "geolocation";
 
 
 // Fetch UI elements we will need to change
@@ -9,15 +10,17 @@ let hrLabel = document.getElementById("hrm");
 let updatedLabel = document.getElementById("updated");
 let wrnLabel = document.getElementById("warning");
 
+
+const eventName = "lowHRNotification";
+
 // Keep a timestamp of the last reading received. Start when the app is started.
 let lastValueTimestamp = Date.now();
 
 // Initialize the UI with some values
 hrLabel.text = "--";
-
 updatedLabel.text = "...";
-
 wrnLabel.text ="...";
+
 
 // This function takes a number of milliseconds and returns a string
 // such as "5min ago".
@@ -52,14 +55,13 @@ function updateDisplay() {
   hrLabel.text = hrm.heartRate;
   lastValueTimestamp = Date.now();
     
-//    function warning(){
-    if (hrm.heartRate <= 30)
-      wrnLabel.text = ("Dein Puls ist sehr niedrig. Wenn dieser Zustand anhält, informiere bitte jemanden.");
-      sendEventIfReady(eventName, hrm.HeartRate);
-    else
-//        if (hrm.heartRate > 30)
-      wrnLabel.text = ("");
-//    }
+      if (hrm.heartRate <= 30){
+        wrnLabel.text = ("Dein Puls ist sehr niedrig. Eine Email diesbezüglich wird automatisch versendet.");
+        sendEventIfReady(eventName, hrm.heartRate)
+      } else {
+        wrnLabel.text = (" ");
+      }
+  
 
   }
 
@@ -75,3 +77,5 @@ function sendEventIfReady(eventName, val) {
     messaging.peerSocket.send({eventName: eventName, result: val});
   }
 }
+
+

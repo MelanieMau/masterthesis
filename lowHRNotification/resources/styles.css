@@ -1,21 +1,8 @@
-svg {
-  viewport-fill: fb-black;
+.background {
+  viewport-fill: black;
 }
 
-.large-value {
-  font-family: Seville-Book;
-  font-size: 120;
-  fill: #F80070;
-}
-
-.updated {
-  font-family: Seville-Book;
-  font-size: 64;
-  fill: #ffffff;
-}
-
-.warning {
-  font-family: Seville-Book;
-  font-size: 30;
-  fill: #ffffff;
+.medium-copy-bold {
+  fill: white;
+  text-anchor: middle;
 }

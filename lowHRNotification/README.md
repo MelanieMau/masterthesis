@@ -1,3 +1,11 @@
-This uses the # sdk-ifttt-demo to send an email to a family member when fitbit ionic detects low hr. it also shows a warning and gps location on device.
+# HR Meter
 
-at the moment: not possible to build the app, the eventhandler doesnt work... but it shows the warning message on the device.. 
+Fitbit SDK example application which displays readings from the Heart Rate
+sensor.
+
+Find out more information on the
+[Fitbit Developer Website](https://dev.fitbit.com).
+
+## License
+
+This example is licensed under the [MIT License](./LICENSE).

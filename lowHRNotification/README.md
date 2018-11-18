@@ -1,7 +1,6 @@
-# sdk-ifttt-demo
+# lowHRNotification
 
-SDK example which demonstrates how to call a web service (REST API) using
-`fetch()`.
+Sends an email to preconfigured email address if the fitbit ionic detects low HR.
 
 This project can trigger an IFTTT Webhook using a Fitbit OS device.
 
@@ -16,7 +15,3 @@ In order to use this demo app, you must create an applet in IFTTT.
 You will also need to enter your [IFTTT API
 key](https://ifttt.com/services/maker_webhooks/settings) into the app's settings
 page.
-
-### Screenshot
-
-![](screenshots/ifttt-Ionic.png)
